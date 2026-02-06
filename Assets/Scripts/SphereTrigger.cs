@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class SphereTrigger : MonoBehaviour
 {
+
+    public GameObject Puzzle4;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Puzzle4.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,7 +20,8 @@ public class SphereTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Sphere"))
         {
-            Destroy(gameObject);
+            Destroy(other.gameObject);
+            Puzzle4.SetActive(true);
 
         }
     }
