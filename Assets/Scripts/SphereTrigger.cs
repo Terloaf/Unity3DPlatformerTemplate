@@ -20,8 +20,10 @@ public class SphereTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Sphere"))
         {
-            Destroy(other.gameObject);
+            Debug.Log("played");
             Puzzle4.SetActive(true);
+            Destroy(other.gameObject);
+            
 
         }
     }
