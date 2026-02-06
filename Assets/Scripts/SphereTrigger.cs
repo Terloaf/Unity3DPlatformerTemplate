@@ -5,7 +5,7 @@ public class SphereTrigger : MonoBehaviour
 {
 
     public GameObject Puzzle4;
-    public GameObject CameraPos;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,16 +22,11 @@ public class SphereTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Sphere"))
         {
+            Puzzle4.SetActive(true);
 
-
-            Destroy(other.gameObject);
+            
         }
     }
 
-    IEnumerator Cutscene()
-    {
-        CameraPos.transform.position 
-        Puzzle4.SetActive(true);
-        
-    }
+   
 }
