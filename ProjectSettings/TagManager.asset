@@ -12,6 +12,8 @@ TagManager:
   - Enemy
   - Water
   - Sphere
+  - cube
+  - Cube
   layers:
   - Default
   - TransparentFX
