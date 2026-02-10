@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ButtonSystem : MonoBehaviour
 {
-    public [] _buttons;
+    public ButtonTriggerSystem[] _buttons;
     public int _buttonsToUse;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
