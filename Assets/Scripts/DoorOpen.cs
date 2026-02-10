@@ -7,8 +7,9 @@ public class DoorOpen : MonoBehaviour
     public GameObject button2;
 
     public GameObject door;
- 
 
+    [SerializeField]
+    ButtonTrigger trigger;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     void Start()

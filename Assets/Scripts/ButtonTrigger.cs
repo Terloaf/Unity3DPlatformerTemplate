@@ -18,6 +18,7 @@ public class ButtonTrigger : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         _button1pressed.SetActive(true);
+
     }
     private void OnTriggerExit(Collider other)
     {
