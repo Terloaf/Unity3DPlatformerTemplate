@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ButtonTriggerSystem : MonoBehaviour
 {
-    [SerializeField]
-    public bool _isPressed = false;
+    
+     public bool _isPressed = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -3,8 +3,14 @@ using UnityEngine;
 
 public class ButtonSystem : MonoBehaviour
 {
-    public ButtonTriggerSystem[] _buttons;
 
+    [SerializeField]
+    ButtonTriggerSystem[] _buttons;
+
+    
+   
+  
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,7 +20,13 @@ public class ButtonSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        for(int i = 0; i < _buttons.Length; i++)
+        {
+            if (_buttons.)
+            {
+
+            }
+        }
     }
 
   
