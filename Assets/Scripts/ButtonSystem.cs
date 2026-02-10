@@ -9,6 +9,7 @@ public class ButtonSystem : MonoBehaviour
 
 
     public GameObject door;
+    public GameObject box;
     
    
   
@@ -31,6 +32,7 @@ public class ButtonSystem : MonoBehaviour
         }
 
         door.SetActive(false);
+        box.SetActive(true);
         
     }
 
