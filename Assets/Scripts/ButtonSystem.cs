@@ -7,6 +7,8 @@ public class ButtonSystem : MonoBehaviour
     [SerializeField]
     ButtonTriggerSystem[] _buttons;
 
+
+    public GameObject door;
     
    
   
@@ -22,12 +24,17 @@ public class ButtonSystem : MonoBehaviour
     {
         for(int i = 0; i < _buttons.Length; i++)
         {
-            if (_buttons.)
+            if (_buttons[i]._isPressed == false)
             {
-
+                return;
             }
         }
+
+        door.SetActive(false);
+        
     }
+
+
 
   
 }
