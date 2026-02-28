@@ -5,7 +5,7 @@ public class SuperHeavyWeightedButton : MonoBehaviour
 {
     public bool _isPressed;
     public Material _material;
-    public int _mass;
+    public float _mass;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
