@@ -5,6 +5,7 @@ public class SuperHeavyWeightedButton : MonoBehaviour
 {
     public bool _isPressed;
     public Material _material;
+    public int _mass;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,7 +19,7 @@ public class SuperHeavyWeightedButton : MonoBehaviour
     }
     public void OnCollisionStay(Collision collision)
     {
-        if (collision.rigidbody.mass >= 1.5)
+        if (collision.rigidbody.mass >= _mass)
         {
             _isPressed = true;
             gameObject.GetComponent<Renderer>().materials[1].color = new Color(0f, 1f, 0f);
