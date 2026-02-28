@@ -3,7 +3,8 @@ using UnityEngine;
 public class WeightedButtonTrigger : MonoBehaviour
 {
     public bool _isPressed = false;
-
+    public AudioSource _audioSource;
+    public AudioClip _audioClip;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +31,12 @@ public class WeightedButtonTrigger : MonoBehaviour
             _isPressed = true;
             gameObject.GetComponent<Renderer>().materials[1].color = new Color(0f, 1f, 0f);
         }
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        _audioSource.pitch = Random.Range(0.9f, 1.1f);
+        _audioSource.PlayOneShot(_audioClip);
     }
 
 }
